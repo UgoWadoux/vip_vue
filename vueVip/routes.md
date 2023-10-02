@@ -1,0 +1,5 @@
+# Routes
+
+|Route|Methode|Description|
+|:----|:------|:----------|
+|
