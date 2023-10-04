@@ -79,21 +79,29 @@ export default {
     </div>
     <button @click="applyFilters">Appliquer les filtres</button>
   </div>
-  <Vehicule
-      v-for="vehicule in vehiculesFiltres"
-      :key="vehicule.immatriculation"
-      :marque="vehicule.marque"
-      :couleur="vehicule.couleur"
-      :immatriculation="vehicule.immattriculationNb"
-      :nb-cv-fiscaux="vehicule.cheveauxFiscNb"
-      :prix-reservation="vehicule.prixReservation"
-      :nb-km="vehicule.nbKillometre"
-      :prix-km="vehicule.prixKillometre"
-      :src="vehicule.src"
-      :model="vehicule.model"
-  ></Vehicule>
+  <div class="listVehicule">
+    <Vehicule
+        v-for="vehicule in vehiculesFiltres"
+        :key="vehicule.immatriculation"
+        :marque="vehicule.marque"
+        :couleur="vehicule.couleur"
+        :immatriculation="vehicule.immattriculationNb"
+        :nb-cv-fiscaux="vehicule.cheveauxFiscNb"
+        :prix-reservation="vehicule.prixReservation"
+        :nb-km="vehicule.nbKillometre"
+        :prix-km="vehicule.prixKillometre"
+        :src="vehicule.src"
+        :model="vehicule.model"
+    ></Vehicule>
+  </div>
 </template>
 
 <style scoped>
-
+.listVehicule {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
 </style>
