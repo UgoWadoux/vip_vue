@@ -3,6 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import VehiculeList from "@/views/VehiculeList.vue";
 import Navbar from "./views/Navbar.vue";
+import Footer from "./views/Footer.vue";
 
 </script>
 <script>
@@ -15,7 +16,7 @@ import Navbar from "./views/Navbar.vue";
     </Navbar>
     <VehiculeList></VehiculeList>
     <br>
-
+    <Footer></Footer>
 
   </header>
 <router-view></router-view>
