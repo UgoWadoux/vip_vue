@@ -13,6 +13,7 @@ export default {
     type:String,
     src: String,
     model:String,
+    id: Number,
   },
   data(){
     return{
@@ -29,6 +30,9 @@ export default {
         this.display ='displayed'
         this.clicked=false
       }
+    },
+    toReserve(){
+      console.log(this.id)
     }
   }
 }
@@ -39,10 +43,12 @@ export default {
     <h2> {{marque}} {{model}} {{couleur}}</h2>
     <img :src="src" alt="vehicule" >
     <button @click="isClicked">Voir plus</button>
-    <p :class="display">Immatriculaion : {{immatriculation}}, Chevaux Fiscaux :{{nbCvFiscaux}}, Nombre de kilometres : {{nbKm}}</p>
-    <p :class="display">Année {{annee}}, type : {{type}}</p>
-    <p :class="display">Prix de reservation : {{prixReservation}}, Prix au kilometre : {{prixKm}}</p>
-
+    <div :class="display">
+      <p >Immatriculaion : {{immatriculation}}, Chevaux Fiscaux :{{nbCvFiscaux}}, Nombre de kilometres : {{nbKm}}</p>
+      <p >Année {{annee}}, type : {{type}}</p>
+      <p >Prix de reservation : {{prixReservation}}, Prix au kilometre : {{prixKm}}</p>
+      <button @click="toReserve">Reserve ce vehicule</button>
+    </div>
   </div>
 </template>
 

@@ -92,6 +92,7 @@ export default {
         :prix-km="vehicule.prixKillometre"
         :src="vehicule.src"
         :model="vehicule.model"
+        :id="vehicule.id"
     ></Vehicule>
   </div>
 </template>
