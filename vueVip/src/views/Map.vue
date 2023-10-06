@@ -85,6 +85,6 @@ export default {
   display: flex;
   justify-content: center;
   margin-left: 1000px;
-  top: -350px;
+  top: -310px;
 }
 </style>
