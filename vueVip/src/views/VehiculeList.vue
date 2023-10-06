@@ -113,9 +113,6 @@ export default {
             :model="vehicule.model"
             :id="vehicule.id"></Vehicule>
     </div>
-        <div>
-          <DriverInfo v-if="showDriverInfo"/>
-        </div>
 
       </div>
     </div>
@@ -191,7 +188,7 @@ export default {
   left: 0;
   padding: -10px;
   pointer-events: none;
-  font-size: 1em;
+  font-size: 1.3em;
   color: #F28585;
   text-transform: uppercase;
 }

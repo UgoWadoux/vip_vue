@@ -1,8 +1,13 @@
 <script>
 import DriverInfo from "../components/DriverInfo.vue";
+import {computed} from "vue";
 export default {
-  name: "header"
+  name: "header",
+  components: {DriverInfo}
 }
+
+
+
 </script>
 
 <template>
@@ -31,9 +36,7 @@ export default {
         <p id="texteP">| Panier</p>
       </div>
       <div class="icone">
-        <img class="logo" src="../../img/VIP-Projet-Non-Perdu/IconesVoitures-Facebook-ect/person_FILL0_wght400_GRAD0_opsz48%201.svg">
-        <p id="texteC">Connexion | Inscription</p>
-        <DriverInfo v-if="showDriverInfo"/>
+        <DriverInfo></DriverInfo>
       </div>
     </div>
   </div>

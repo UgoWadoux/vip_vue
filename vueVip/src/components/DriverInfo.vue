@@ -1,30 +1,34 @@
 <template>
   <div>
-    <button @click="showPopup">Se connecter :</button>
-
+    <div class="click">
+      <img @click="showPopup" class="logo" src="../../img/VIP-Projet-Non-Perdu/IconesVoitures-Facebook-ect/person_FILL0_wght400_GRAD0_opsz48%201.svg">
+      <button class="inscription" @click="showPopup">| Se connecter</button>
+    </div>
     <div v-if="isPopupVisible" class="overlay" @click="closePopup">
       <div class="popup" @click.stop>
-        <h2>Informations du conducteur</h2>
+        <img @click="closePopup" class="croix" src="../../img/VIP-Projet-Non-Perdu/Icones2/close_FILL0_wght400_GRAD0_opsz48%201.png">
+        <h2 class="info">Informations du conducteur</h2>
         <form @submit.prevent="submitDriverInfo">
           <a class="close" href="#" @click="closePopup">&times;</a>
           <div class="content">
             <div>
-              <label for="lastName">Nom :</label>
+              <label for="lastName">Nom : </label>
               <input type="text" id="lastName" v-model="driver.lastName" required>
             </div>
             <div>
-              <label for="firstName">Prénom :</label>
+              <label for="firstName">Prénom : </label>
               <input type="text" id="firstName" v-model="driver.firstName" required>
             </div>
             <div>
-              <label for="birthdate">Date de naissance :</label>
+              <label for="birthdate">Date de naissance : </label>
               <input type="date" id="birthdate" v-model="driver.birthdate" required>
             </div>
             <div>
-              <label for="licenseId">Numéros de permis</label>
+              <label for="licenseId">Numéros de permis : </label>
               <input type="text" id="licenseId" v-model="driver.licenseId" required>
             </div>
-            <button type="submit">Enregistrer</button>
+            <br>
+            <button class="enregistrer" type="submit">Enregistrer</button>
           </div>
         </form>
       </div>
@@ -104,6 +108,11 @@ export default {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Cambay', sans-serif;
+  color: #70aecc;
+  margin-left: 10px;
 }
 
 .close {
@@ -114,5 +123,50 @@ export default {
   font-size: 20px;
   text-decoration: none;
   color: #000;
+}
+
+.inscription{
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Cambay', sans-serif;
+  color: #70aecc;
+  margin-left: 10px;
+}
+
+.click{
+  display: flex;
+  align-items: center;
+}
+
+.enregistrer{
+  display: flex;
+  align-items: center;
+  color: #F28585;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  transition: all 0.2s ease;
+
+}
+
+.info{
+  display: flex;
+  align-items: center;
+  color: #F28585;
+}
+
+.croix{
+  float: right;
+  justify-content: right;
+  margin-left: 30px;
+  padding-top: 15px;
+}
+.croix:hover{
+  transform: scale(1.5);
+}
+.enregistrer:hover{
+  transform: scale(1.3);
 }
 </style>
