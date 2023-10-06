@@ -39,6 +39,7 @@ export default {
   flex-direction: row;
   justify-content: space-around;
   padding-top: 35px;
+  margin-top: 200px;
 }
 
 p{

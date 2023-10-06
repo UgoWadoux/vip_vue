@@ -30,6 +30,7 @@ export default {
       <div class="icone">
         <img class="logo" src="../../img/VIP-Projet-Non-Perdu/IconesVoitures-Facebook-ect/person_FILL0_wght400_GRAD0_opsz48%201.svg">
         <p id="texteC">Connexion | Inscription</p>
+        <DriverInfo v-if="showDriverInfo"/>
       </div>
     </div>
   </div>
