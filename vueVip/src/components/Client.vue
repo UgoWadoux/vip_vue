@@ -13,7 +13,8 @@ export default {
 
 <template>
   <div class="client">
-    <p>Nom: {{lastName}}, Prénom: {{firstName}}</p>
+    <p>Nom: {{lastName}} </p>
+    <p>Prénom: {{firstName}}</p>
     <p>Age: {{birthdate}}</p>
     <p>Numéro de permis: {{licenseId}}</p>
     <br>

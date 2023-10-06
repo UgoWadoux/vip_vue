@@ -7,28 +7,31 @@
     <div v-if="isPopupVisible" class="overlay" @click="closePopup">
       <div class="popup" @click.stop>
         <img @click="closePopup" class="croix" src="../../img/VIP-Projet-Non-Perdu/Icones2/close_FILL0_wght400_GRAD0_opsz48%201.png">
-        <h2 class="info">Informations du conducteur</h2>
+        <h2 class="info">Informations Du Conducteur</h2>
         <form @submit.prevent="submitDriverInfo">
           <a class="close" href="#" @click="closePopup">&times;</a>
           <div class="content">
             <div>
               <label for="lastName">Nom : </label>
-              <input type="text" id="lastName" v-model="driver.lastName" required>
+              <input type="text" id="lastName" class="taille" v-model="driver.lastName" required>
             </div>
             <div>
               <label for="firstName">Prénom : </label>
-              <input type="text" id="firstName" v-model="driver.firstName" required>
+              <input type="text" id="firstName" class="taille" v-model="driver.firstName" required>
             </div>
             <div>
               <label for="birthdate">Date de naissance : </label>
-              <input type="date" id="birthdate" v-model="driver.birthdate" required>
+              <input type="date" id="birthdate" class="taille" v-model="driver.birthdate" required>
             </div>
             <div>
               <label for="licenseId">Numéros de permis : </label>
-              <input type="text" id="licenseId" v-model="driver.licenseId" required>
+              <input type="text" id="licenseId" class="taille" v-model="driver.licenseId" required>
             </div>
             <br>
-            <button class="enregistrer" type="submit">Enregistrer</button>
+            <div class="bas">
+              <button class="enregistrer" type="submit">Enregistrer</button>
+              <button class="cancel" type="submit" @click="closePopup">Annuler</button>
+            </div>
           </div>
         </form>
       </div>
@@ -148,6 +151,21 @@ export default {
   background-color: transparent;
   font-size: 18px;
   transition: all 0.2s ease;
+}
+
+.cancel{
+  display: flex;
+  align-items: center;
+  color: #70aecc;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  transition: all 0.2s ease;
+  margin-right: 20px;
+}
+
+.cancel:hover{
+  transform: scale(1.5);
 
 }
 
@@ -169,4 +187,20 @@ export default {
 .enregistrer:hover{
   transform: scale(1.3);
 }
+
+
+.content{
+  font-size: 22px;
+}
+
+.taille{
+  font-size: 17px;
+}
+
+.bas{
+  justify-content: space-between;
+  display: flex;
+}
+
+
 </style>

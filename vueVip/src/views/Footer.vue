@@ -21,7 +21,7 @@ export default {
   <div class="contact">
     <h2>Nous contacter</h2>
     <p>contact@veryimportantpet.com</p>
-    <img class="logoV" src="../../img/VIP-Projet-Non-Perdu/IconesVoitures-Facebook-ect/icons8-instagram(1)%201.svg">
+    <a href="http://www.instagram.com/kylian.crh"><img class="logoV" src="../../img/VIP-Projet-Non-Perdu/IconesVoitures-Facebook-ect/icons8-instagram(1)%201.svg"></a>
     <img class="logoV" src="../../img/VIP-Projet-Non-Perdu/IconesVoitures-Facebook-ect/icons8-facebook%201.svg">
     <img class="logoV" src="../../img/VIP-Projet-Non-Perdu/IconesVoitures-Facebook-ect/icons8-twitterx%201.svg">
   </div>

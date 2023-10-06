@@ -76,7 +76,7 @@ export default {
         <div class="gammeVehicule">
           <p class="gammeDeGamme">Gamme : </p>
           <select id="gamme" v-model="gammeFiltre">
-            <option value="">Selectionné</option>
+            <option value="">Selectionné : </option>
             <option value="">Toutes les gammes</option>
             <option value="utilitaire">Utilitaire</option>
             <option value="moto">Moto</option>
