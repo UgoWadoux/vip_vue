@@ -12,15 +12,23 @@ export default {
 </script>
 
 <template>
-  <p>Nom: {{lastName}}, Prénom: {{firstName}}</p>
-  <p>Age: {{birthdate}}</p>
-  <p>Numéro de permis: {{licenseId}}</p>
-  <br>
+  <div class="client">
+    <p>Nom: {{lastName}}, Prénom: {{firstName}}</p>
+    <p>Age: {{birthdate}}</p>
+    <p>Numéro de permis: {{licenseId}}</p>
+    <br>
+  </div>
+
 </template>
 
 <style scoped>
-*{
+.client{
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin: 1%;
+  width: 20%;
+  background: #e3e3e3;
 }
 </style>

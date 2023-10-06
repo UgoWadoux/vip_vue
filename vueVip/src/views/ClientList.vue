@@ -27,9 +27,35 @@ export default {
 
 <template>
   <h2>Liste des client</h2>
-  <Client v-for="client in clients" :last-name="client.lastName" :first-name="client.firstName" :birthdate="client.birthdate" :license-id="client.licenseId"></Client>
+  <div class="customers">
+    <Client v-for="client in clients" :last-name="client.lastName" :first-name="client.firstName" :birthdate="client.birthdate" :license-id="client.licenseId"></Client>
+  </div>
 </template>
 
 <style scoped>
-
+h2{
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Cambay', sans-serif;
+  color: #F28585;
+  margin-left: 10px;
+}
+.customers{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 18px;
+  font-weight: bold;
+  justify-content: center;
+  font-family: 'Cambay', sans-serif;
+  color: #70aecc;
+  margin-left: 10px;
+  text-decoration: none;
+  width: 96%;
+  height: 2000px;
+  background: #f6f4f4;
+  border: 30px solid white;
+}
 </style>

@@ -15,13 +15,22 @@ export default {
 </script>
 
 <template>
-<p >id du vehicule : {{idVehicule}}</p>
-  <p>id client : {{idCustomer}}</p>
-  <p>date de debut : {{startDate}}</p>
-  <p>date de fin : {{endDate}}</p>
-  <p>prix : {{price}}</p>
+  <div class="reserve">
+    <p>Id du vehicule : {{idVehicule}}</p>
+    <p>Id client : {{idCustomer}}</p>
+    <p>Date de debut : {{startDate}}</p>
+    <p>Date de fin : {{endDate}}</p>
+    <p>Prix : {{price}} €</p>
+  </div>
 </template>
 
 <style scoped>
-
+.reserve{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+  background: #e3e3e3;
+}
 </style>

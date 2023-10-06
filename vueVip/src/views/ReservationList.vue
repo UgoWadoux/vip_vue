@@ -37,11 +37,39 @@ export default {
 </script>
 
 <template>
-  <Reservation v-for="reservation in reservations" :id-vehicule="reservation.idVehicle"
-               :id-customer="reservation.idCustomer" :start-date="reservation.startDate"
-               :end-date="reservation.endDate" :price="reservation.price"></Reservation>
+  <h2>Liste des réservations</h2>
+  <div class="reservation">
+
+    <Reservation v-for="reservation in reservations" :id-vehicule="reservation.idVehicle"
+                 :id-customer="reservation.idCustomer" :start-date="reservation.startDate"
+                 :end-date="reservation.endDate" :price="reservation.price"></Reservation>
+  </div>
 </template>
 
 <style scoped>
-
+h2{
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Cambay', sans-serif;
+  color: #F28585;
+  margin-left: 10px;
+}
+.reservation{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 18px;
+  font-weight: bold;
+  justify-content: center;
+  font-family: 'Cambay', sans-serif;
+  color: #70aecc;
+  margin-left: 10px;
+  text-decoration: none;
+  width: 96%;
+  height: 2000px;
+  background: #f6f4f4;
+  border: 30px solid white;
+}
 </style>

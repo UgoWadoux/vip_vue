@@ -18,18 +18,19 @@ export default {
     </router-link>
     </div>
     <div class="iconesD">
-      <div class="icone">
-        <img class="logoM" src="../../img/VIP-Projet-Non-Perdu/IconesVoitures-Facebook-ect/Frame.png">
-        <p id="texteM">| Moto</p>
-      </div>
+<!--      <div class="icone">-->
+<!--        <img class="logoM" src="../../img/VIP-Projet-Non-Perdu/IconesVoitures-Facebook-ect/Frame.png">-->
+<!--        <p id="texteM">| Moto</p>-->
+<!--      </div>-->
       <div class="icone">
         <img class="logoU" src="../../img/VIP-Projet-Non-Perdu/IconesVoitures-Facebook-ect/local_shipping_FILL0_wght400_GRAD0_opsz48%202.svg">
-        <p id="textU">| Utilitaire</p>
+<!--        <p id="textU">| Utilitaire</p>-->
+        <router-link to="/reservation" id="textU">| Reservations </router-link>
       </div>
       <div class="icone">
         <img class="logoV" src="../../img/VIP-Projet-Non-Perdu/IconesVoitures-Facebook-ect/directions_car_FILL0_wght400_GRAD0_opsz48%201-1.svg">
 <!--        <p id="texteV">| Voiture</p>-->
-        <router-link to="/clients">clieb</router-link>
+        <router-link to="/clients" id="texteV">| Clients</router-link>
       </div>
       <div class="icone">
         <img class="logoP" src="../../img/VIP-Projet-Non-Perdu/IconesVoitures-Facebook-ect/shopping_cart_FILL0_wght400_GRAD0_opsz48%201.svg">
@@ -76,6 +77,7 @@ export default {
   font-family: 'Cambay', sans-serif;
   color: #70aecc;
   margin-left: 10px;
+  text-decoration: none;
 }
 #accueil{
 
