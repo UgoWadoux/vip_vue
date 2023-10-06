@@ -1,4 +1,5 @@
 <script>
+import DriverInfo from "../components/DriverInfo.vue";
 export default {
   name: "header"
 }
