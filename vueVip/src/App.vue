@@ -4,7 +4,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import VehiculeList from "@/views/VehiculeList.vue";
 import Navbar from "./views/Navbar.vue";
 import Footer from "./views/Footer.vue";
-import Accueil from "./views/Accueil.vue";
+import Accueil from "@/views/Accueil.vue";
 
 </script>
 <script>
@@ -13,19 +13,20 @@ import Accueil from "./views/Accueil.vue";
 <template>
 
   <header>
-    <Navbar></Navbar>
-
+    <Navbar>
+    </Navbar>
     <br>
-
-    <Accueil></Accueil>
-
-    <VehiculeList></VehiculeList>
+<!--    <Accueil></Accueil>-->
+<!--    <VehiculeList></VehiculeList>-->
+    <!--    <VehiculeList></VehiculeList>-->
+<!--    <router-link to="/clients"> client</router-link>-->
+    <router-view></router-view>
 
     <Footer></Footer>
 
   </header>
 
-<router-view></router-view>
+
 
 </template>
 

@@ -7,9 +7,10 @@ export default {
 
 <template>
   <div class="navbar">
-    <div class="logoG">
+    <div class="logoG"><router-link to="/">
       <img class="logo" src="../../img/VIP-Projet-Non-Perdu/Logo/logo.png">
       <img class="logoTexte" src="../../img/VIP-Projet-Non-Perdu/Logo/logoTexteDeux.png">
+    </router-link>
     </div>
     <div class="iconesD">
       <div class="icone">
@@ -22,7 +23,8 @@ export default {
       </div>
       <div class="icone">
         <img class="logoV" src="../../img/VIP-Projet-Non-Perdu/IconesVoitures-Facebook-ect/directions_car_FILL0_wght400_GRAD0_opsz48%201-1.svg">
-        <p id="texteV">| Voiture</p>
+<!--        <p id="texteV">| Voiture</p>-->
+        <router-link to="/clients">clieb</router-link>
       </div>
       <div class="icone">
         <img class="logoP" src="../../img/VIP-Projet-Non-Perdu/IconesVoitures-Facebook-ect/shopping_cart_FILL0_wght400_GRAD0_opsz48%201.svg">

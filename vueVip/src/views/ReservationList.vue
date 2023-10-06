@@ -1,10 +1,12 @@
 <script>
 import Reservation from "@/components/Reservation.vue";
+import Vehicule from "@/components/Vehicule.vue";
 
 export default {
   name: "ReservationList",
   components: {
     Reservation,
+    Vehicule,
   },
   methods: {
     async fetchReservation() {
@@ -16,16 +18,21 @@ export default {
       } catch (e) {
         throw new Error('Impossible de contacter le serveur ugo')
       }
-    }
+    },
+    test(value){
+      console.log('test', value)
+    },
+
   },
   created() {
     this.fetchReservation()
   },
   data() {
     return {
-      reservations: []
+      reservations: [],
     }
-  }
+  },
+
 }
 </script>
 

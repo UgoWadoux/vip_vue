@@ -18,7 +18,8 @@ export default {
   data(){
     return{
       clicked:false,
-      display:'displayed'
+      display:'displayed',
+      vehiculeID:''
     }
   },
   methods:{
@@ -32,9 +33,10 @@ export default {
       }
     },
     toReserve(){
-      console.log(this.id)
-    }
-  }
+      this.$emit('idVehicule',this.id )
+
+    },
+  },
 }
 </script>
 

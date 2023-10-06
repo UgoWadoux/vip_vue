@@ -29,6 +29,7 @@
       <Map></Map>
     </div>
   </div>
+<VehiculeList></VehiculeList>
 </template>
 
 
@@ -41,6 +42,8 @@
 
 import { ref } from 'vue';
 import Map from "./Map.vue";
+import ReservationList from "@/views/ReservationList.vue";
+import VehiculeList from "@/views/VehiculeList.vue";
 const text = ref("Depuis 2004, nous sommes les leaders du transport d’animaux.$ Forts de nos 19 ans d’expérience dans le domaine, vos animaux ne seront jamais mieux traités que chez nous ! Nos équipements assurent sécurité et confort pendant le trajet.$ Vous trouverez tous types de véhicules, de la Rolls-Royce au van aménagé pour vos Road Trips.$ Vous trouverez tout pour transporter vos animaux!");
 const formattedText = ref(text.value.split('$'));
 
